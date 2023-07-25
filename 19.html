@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>19th program</title>
+<style>
+  body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+   }
+  p {
+   font-size:20px;
+   color:#85C1E9;
+  }
+  h2 {
+    font-size:30px;
+    color:#D35400;
+    text-decoration:underline #8E44AD;
+  }
+  button {
+    padding:7px 10px;
+  }
+</style>
+</head>
+<body>
+  <h2> Simple Calculator </h2>
+  <p>Enter First number:<input id="first"></p>
+  <p>Enter Second number:<input id="second"></p>
+  <button type="button" onclick="add()">Add</button>
+  <button type="button" onclick="subs()">Substract</button>
+  <button type="button" onclick="multi()">Multiply</button> 
+  <button type="button" onclick="div()">Division</button>
+  <p>result =<input id="output"></p>
+  <script>
+   function add() {
+      var num1,num2,result;
+      num1=parseInt(document.getElementById("first").value);
+      num2=parseInt(document.getElementById("second").value);
+      result = num1+num2;
+      document.getElementById("output").value= result;
+   }
+   function subs() {
+      var num1,num2,result;
+      num1=parseInt(document.getElementById("first").value);
+      num2=parseInt(document.getElementById("second").value);
+      result = num1-num2;
+      document.getElementById("output").value= result;
+   }
+   function multi() {
+      var num1,num2,result;
+      num1=parseInt(document.getElementById("first").value);
+      num2=parseInt(document.getElementById("second").value);
+      result = num1*num2;
+      document.getElementById("output").value= result;
+   }
+   function div() {
+      var num1,num2,Division,result;
+      num1=parseInt(document.getElementById("first").value);
+      num2=parseInt(document.getElementById("second").value);
+      result = num1/num2;
+      document.getElementById("output").value= result;
+   }
+  </script>  
+</body>
+</html>

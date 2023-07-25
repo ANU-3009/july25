@@ -1,0 +1,108 @@
+<html>
+ <head>
+   <title>15th program</title>
+ <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+   font-size:20px;
+   color:#85C1E9;
+  }
+  h2 {
+    font-size:30px;
+    color:#D35400;
+    text-decoration:underline #8E44AD;
+  }
+  button {
+    padding:7px 10px;
+    background-color:#58D68D;
+  }
+  #num1:hover {
+     font-size:20px;
+     margin-left:10px;
+     background-color:#CACFD2;
+  }
+  #num2:hover {
+     font-size:20px;
+     margin-left:10px;
+     background-color:#CACFD2;
+  }
+  #num3:hover {
+     font-size:20px;
+     margin-left:10px;
+     background-color:#CACFD2;
+  }
+  #output1 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #output2 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #num1 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #num2 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #num3 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  </style>
+ </head>
+ <body>
+   <h2> largest and smalest of a number </h2>
+   <p>Enter the first Number :<input id="num1"></p>
+   <p>Enter the second Number :<input id="num2"></p>
+   <p>Enter the third Number :<input id="num3"></p>
+   <button type="button" onClick="large()"> Largest </button>
+   <button type="button" onClick="small()"> Smallest  </button>
+   <p>Largest  =<input id="output1"></p>
+   <p>Smallest  =<input id="output2"></p>
+   <script>
+      function large() {
+        var a,b,c;
+        a = parseInt(document.getElementById("num1").value);
+        b = parseInt(document.getElementById("num2").value);
+        c = parseInt(document.getElementById("num3").value);
+        if((a>b) && (a>c)) {
+           document.getElementById("output1").value = a + "Is largest";
+        }
+        else if ((b>c)&&(b>a)) {
+           document.getElementById("output1").value = b + "Is largest";
+        }
+        else if ((c>a)&&(c>b)) {
+            document.getElementById("output1").value = c + "Is largest";
+        }
+        else {
+             document.getElementById("output1").value = "numbers are equal";
+        }
+      }
+      function small() {
+        var a,b,c;
+        a = parseInt(document.getElementById("num1").value);
+        b = parseInt(document.getElementById("num2").value);
+        c = parseInt(document.getElementById("num3").value);
+        if((a<b) && (a<c)) {
+           document.getElementById("output2").value = a + "Is Smallest";
+        }
+        else if ((b<c)&&(b<a)) {
+           document.getElementById("output2").value = b + "Is Smallest";
+        }
+        else if ((c<a)&&(c<b)) {
+            document.getElementById("output2").value = c + "Is Smallest";
+        }
+        else {
+             document.getElementById("output2").value = "numbers are equal";
+        }
+      }
+    </script>
+  </body>
+ </html>

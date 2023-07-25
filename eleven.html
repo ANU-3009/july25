@@ -1,0 +1,71 @@
+<html>
+ <head>
+   <title>Eleven program</title>
+ <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+   font-size:20px;
+   color:#85C1E9;
+  }
+  h2 {
+    font-size:30px;
+    color:#D35400;
+    text-decoration:underline #8E44AD;
+  }
+  button {
+    padding:7px 10px;
+    background-color:#58D68D;
+  }
+  #num1:hover {
+     font-size:20px;
+     margin-left:10px;
+     background-color:#CACFD2;
+  }
+  #num2:hover {
+     font-size:20px;
+     margin-left:10px;
+     background-color:#CACFD2;
+  }
+  #output1 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #output2 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #num1 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #num2 {
+     font-size:20px;
+     margin-left:10px;
+  }
+  </style>
+ </head>
+ <body>
+   <h2> Swapping two numbers </h2>
+   <p>Enter First Number :<input id="num1"></p>
+   <p>Enter Second Number :<input id="num2"></p>
+   <button type="button" onClick="swap()"> swap  </button>
+   <p>Result1 =<input id="output1"></p>
+   <p>Result2 =<input id="output2"></p>
+   <script>
+      function swap() {
+        var a,b,Result1,temp,Result2;
+        a = parseInt(document.getElementById("num1").value);
+        b = parseInt(document.getElementById("num2").value);
+        temp = a;
+        a = b;
+        b = temp;
+        document.getElementById("output1").value= a;
+        document.getElementById("output2").value= b;
+      }
+    </script>
+  </body>
+ </html>

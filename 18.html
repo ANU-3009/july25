@@ -1,0 +1,64 @@
+<html>
+ <head>
+   <title>18th program</title>
+   <style>
+     body {
+      text-align:center;
+      margin-top:50px;
+      background-color:#F9E79F;
+     }
+     p {
+      font-size:20px;
+      color:#85C1E9;
+     }
+     h2 {
+      font-size:30px;
+      color:#D35400;
+      text-decoration:underline #8E44AD;
+     }
+     button {
+      padding:7px 10px;
+      background-color:#58D68D;
+     }
+  </style>
+ </head>
+ <body>
+   <h2> Corresponding day in a Week </h2>
+   <p>Enter the day :<input id="num1"></p>
+   <button type="button" onClick="check()"> Check </button>
+   <p>Result =<input id="output1"></p>
+   <script>
+     function check() {
+         var a,day;
+         a = parseInt(document.getElementById("num1").value);
+         switch (a) {
+             case 1 :
+                  day = "sunday";
+                  break;
+             case 2 :
+                  day = "monday";
+                  break;
+             case 3 :
+                  day = "tuesday";
+                  break;
+             case 4 :
+                  day = "wednesday";
+                  break;
+             case 5 :
+                  day = "thursday";
+                  break;
+             case 6 :
+                  day = "friday";
+                  break;
+             case 7 :
+                  day = "tuesday";
+                  break;
+             default:
+                  day = "invalid entry";          
+         }
+         document.getElementById("output1").value = day;
+     }
+   </script>
+  </body>
+</html>
+   

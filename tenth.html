@@ -1,0 +1,59 @@
+<html>
+ <head>
+   <title>Tenth program</title>
+ <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+   font-size:20px;
+   color:#85C1E9;
+  }
+  h2 {
+    font-size:30px;
+    color:#D35400;
+    text-decoration:underline #8E44AD;
+  }
+  button {
+    padding:7px 10px;
+    background-color:#58D68D;
+  }
+  #num {
+     font-size:20px;
+     margin-left:10px;
+  }
+  #num:hover {
+     font-size:20px;
+     margin-left:10px;
+     background-color:#CACFD2;
+  }
+  #output {
+     font-size:20px;
+     margin-left:10px;
+  }
+  </style>
+ </head>
+ <body>
+   <h2> Leap year or not </h2>
+   <p>Enter the Year :<input id="num"></p>
+   <button type="button" onClick="check()"> check  </button>
+   <p>Result =<input id="output"></p>
+   <script>
+      function check() {
+        var num1,result;
+        num1 = parseInt(document.getElementById("num").value);
+        if((num1 % 4==0) && (num1 % 100 !=0)){
+           document.getElementById("output").value = num1 + "Is Leap Year";
+        }
+        else if (num1 % 400 ==0) {
+           document.getElementById("output").value = num1 + "Is Leap Year";
+        }
+        else {
+           document.getElementById("output").value = num1 + "Is Not Leap Year";
+        }
+      }
+    </script>
+  </body>
+ </html>

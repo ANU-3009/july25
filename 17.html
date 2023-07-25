@@ -1,0 +1,56 @@
+<html>
+ <head>
+   <title>18th program</title>
+   <style>
+     body {
+      text-align:center;
+      margin-top:50px;
+      background-color:#F9E79F;
+     }
+     p {
+      font-size:20px;
+      color:#85C1E9;
+     }
+     h2 {
+      font-size:30px;
+      color:#D35400;
+      text-decoration:underline #8E44AD;
+     }
+     button {
+      padding:7px 10px;
+      background-color:#58D68D;
+     }
+  </style>
+ </head>
+ <body>
+   <h2> Eligibility Checking </h2>
+   <p>Enter maths mark :<input id="num1"></p>
+   <p>Enter physics mark :<input id="num2"></p>
+   <p>Enter chemistry mark :<input id="num3"></p>
+   <button type="button" onClick="check()"> Check </button>
+   <p>Total =<input id="output1"></p>
+   <p>Total1=<input id="output2"></p>
+   <p>Result =<input id="output"></p>
+   <script>
+     function check() {
+        var a,b,c,Total,Total1;
+        a = parseInt(document.getElementById("num1").value);
+        b = parseInt(document.getElementById("num2").value);
+        c = parseInt(document.getElementById("num3").value);
+        Total = parseInt(a+b+c);
+        document.getElementById("output1").value = Total;
+        Total1= (a+b);
+        document.getElementById("output2").value = Total1;
+        if ( (a>=65) && (b>=55) && (c>=50) ) {
+           if ( (Total >= 190) && (Total1 >= 140) ) {
+             document.getElementById("output").value = "eligible";
+           }
+        }
+        else {
+           document.getElementById("output").value = "ineligible";
+        }       
+     }
+   </script>
+ </body>
+</html>
+         
